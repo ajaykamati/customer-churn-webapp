@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Customer Churn Prediction{% endblock %}
+
+{% block content %}
+<div class="row align-items-center min-vh-75">
+    <div class="col-lg-6 mb-5 mb-lg-0">
+        <h1 class="display-4 fw-bold text-primary mb-3">Customer Churn Prediction System</h1>
+        <p class="lead text-secondary mb-4">
+            Identify at-risk customers before they leave. Our machine learning model analyzes customer behavior to
+            predict churn probability, helping you take proactive retention actions.
+        </p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="/predict_form" class="btn btn-primary btn-lg px-4 me-md-2 shadow-sm">
+                <i class="bi bi-magic me-2"></i>Start Prediction
+            </a>
+            <a href="/about" class="btn btn-outline-secondary btn-lg px-4 shadow-sm">Learn More</a>
+        </div>
+    </div>
+    <div class="col-lg-6 text-center">
+        <div class="card border-0 shadow-lg rounded-4 overflow-hidden hero-card">
+            <div class="card-body bg-white p-5">
+                <i class="bi bi-bar-chart-fill text-primary display-1 mb-4 d-block"></i>
+                <h3 class="h4 fw-bold">Data-Driven Retention</h3>
+                <p class="text-muted">Leveraging advanced supervised learning to maximize Customer Lifetime Value (CLV).
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

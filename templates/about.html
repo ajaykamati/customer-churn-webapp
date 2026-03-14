@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}About Project{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card shadow rounded-4 border-0">
+            <div class="card-body p-5">
+                <h2 class="fw-bold text-primary mb-4 border-bottom pb-3">About This Project</h2>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="text-dark fw-bold mt-3">Customer Churn Prediction System</h4>
+                        <p class="text-muted lh-lg">
+                            This application is designed to predict whether a customer will stop doing business with a
+                            company (churn).
+                            Customer churn is a critical metric for businesses, as acquiring new customers is often much
+                            more expensive than retaining existing ones.
+                        </p>
+
+                        <h4 class="text-dark fw-bold mt-4">Machine Learning Model</h4>
+                        <p class="text-muted lh-lg">
+                            We use an advanced <strong>XGBoost Classifier</strong> trained on historical customer data.
+                            The model analyzes 9 key customer features including Age, Relationships, Credit Limit, and
+                            Transaction activity to calculate the probability of a customer churning.
+                        </p>
+
+                        <h4 class="text-dark fw-bold mt-4">Technology Stack</h4>
+                        <ul class="list-group list-group-flush mb-4 text-muted">
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i
+                                    class="bi bi-check2-circle text-primary me-2"></i><strong>Backend:</strong> Python,
+                                Flask, Pandas, Scikit-learn, XGBoost</li>
+                            <li class="list-group-item bg-transparent border-0 ps-0"><i
+                                    class="bi bi-check2-circle text-primary me-2"></i><strong>Frontend:</strong> HTML5,
+                                CSS3, Bootstrap 5</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 text-center mt-4 mt-md-0">
+                        <div class="bg-light rounded-4 p-4 h-100 d-flex flex-column justify-content-center">
+                            <i class="bi bi-cpu text-primary display-1 mb-3"></i>
+                            <h5 class="fw-bold">Ready to deploy</h5>
+                            <p class="small text-muted mb-0">Prepared for Render or Heroku</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5 pt-3 border-top">
+                    <a href="/predict_form" class="btn btn-primary btn-lg px-5 shadow">Try the Prediction Tool</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
